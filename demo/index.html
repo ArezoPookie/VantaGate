@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Protected Site</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background:
+                radial-gradient(circle at top, #24104a 0%, transparent 45%),
+                #08070d;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            width: min(600px, 100%);
+            padding: 50px 40px;
+            text-align: center;
+
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 26px;
+
+            background: rgba(18, 15, 28, 0.82);
+
+            box-shadow:
+                0 25px 80px rgba(0, 0, 0, 0.5),
+                0 0 70px rgba(130, 60, 255, 0.1);
+
+            backdrop-filter: blur(20px);
+        }
+
+        .icon {
+            width: 70px;
+            height: 70px;
+
+            margin: 0 auto 24px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: rgba(145, 80, 255, 0.14);
+            border: 1px solid rgba(170, 110, 255, 0.3);
+
+            color: #c59cff;
+
+            font-size: 30px;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: #aaa4b7;
+            line-height: 1.7;
+        }
+
+        .badge {
+            display: inline-block;
+
+            margin-top: 25px;
+            padding: 9px 16px;
+
+            border-radius: 999px;
+
+            background: rgba(145, 80, 255, 0.12);
+            border: 1px solid rgba(170, 110, 255, 0.2);
+
+            color: #c59cff;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="card">
+
+        <div class="icon">
+            ✓
+        </div>
+
+        <h1>
+            Welcome to the protected site
+        </h1>
+
+        <p>
+            VantaGate successfully verified your browser
+            and granted access to this destination.
+        </p>
+
+        <div class="badge">
+            VANTAGATE VERIFIED
+        </div>
+
+    </main>
+
+</body>
+</html>

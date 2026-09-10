@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VantaGate</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="gate">
+
+        <div class="card">
+
+            <div class="icon">
+                ✓
+            </div>
+
+            <h1>
+                Security check
+            </h1>
+
+            <p class="status" id="status">
+                Checking your browser...
+            </p>
+
+            <div class="challenge hidden" id="challenge">
+
+                <div class="question" id="question"></div>
+
+                <div class="captcha hidden" id="captcha">
+
+                    <div
+                        class="captcha-image"
+                        id="captchaImage"
+                    ></div>
+
+                    <button
+                        class="captcha-refresh"
+                        id="captchaRefresh"
+                        type="button"
+                    >
+                        ↻ New CAPTCHA
+                    </button>
+
+                    <input
+                        type="text"
+                        id="captchaAnswer"
+                        placeholder="Enter the characters"
+                        autocomplete="off"
+                        maxlength="6"
+                    >
+
+                </div>
+
+                <input
+                    type="number"
+                    id="answer"
+                    placeholder="Enter your answer"
+                    autocomplete="off"
+                >
+
+                <button
+                    id="verify"
+                    type="button"
+                >
+                    Verify
+                </button>
+
+                <p
+                    class="error"
+                    id="error"
+                ></p>
+
+            </div>
+
+            <div
+                class="loader"
+                id="loader"
+            ></div>
+
+        </div>
+
+    </main>
+
+    <script src="gate.js"></script>
+
+</body>
+</html>
